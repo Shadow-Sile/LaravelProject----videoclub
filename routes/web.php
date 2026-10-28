@@ -4,7 +4,15 @@ use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibroController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
+
+
+
+Route::get('/run-migrations-x7k2q', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    return '<pre>' . Artisan::output() . '</pre>';
+});
 Route::get('/', [CatalogController::class,'index'])->name('catalog.index');
 
 Route::get('/catalog', [CatalogController::class,'index'])->name('catalog.index');
