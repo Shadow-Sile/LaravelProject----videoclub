@@ -12,6 +12,11 @@ Route::get('/debug-movies-x7k2q', function () {
     return \App\Models\Movie::all();
 });
 
+Route::get('/seed-catalog-x7k2q', function () {
+    Artisan::call('db:seed', ['--force' => true]);
+    return '<pre>' . Artisan::output() . '</pre><p>Películas en la BD: ' . \App\Models\Movie::count() . '</p>';
+});
+
 Route::get('/run-migrations-x7k2q', function () {
     Artisan::call('migrate', ['--force' => true]);
     return '<pre>' . Artisan::output() . '</pre>';

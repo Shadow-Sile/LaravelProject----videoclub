@@ -178,19 +178,20 @@ class DatabaseSeeder extends Seeder
      
      private function seedCatalog(): void
     {
-        DB::table('movies')->delete();
-
-         foreach( $this->arrayPeliculas as $pelicula ) 
-    {
-       $p = new Movie;
-       $p->title = $pelicula['title'];
-       $p->year = $pelicula['year'];
-       $p->director = $pelicula['director'];
-       $p->poster = $pelicula['poster'];
-       $p->rented = $pelicula['rented'];
-       $p->synopsi = $pelicula['synopsis'];
-       $p->save();
-   }
+        // Idempotente y NO destructivo: actualiza por título y no borra las
+        // películas que se hayan añadido desde la aplicación.
+        foreach ($this->arrayPeliculas as $pelicula) {
+            Movie::updateOrCreate(
+                ['title' => $pelicula['title']],
+                [
+                    'year' => $pelicula['year'],
+                    'director' => $pelicula['director'],
+                    'poster' => $pelicula['poster'],
+                    'rented' => $pelicula['rented'],
+                    'synopsi' => $pelicula['synopsis'],
+                ]
+            );
+        }
 
     }
     
