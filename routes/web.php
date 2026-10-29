@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Artisan;
 
 
 
+Route::get('/debug-movies-x7k2q', function () {
+    return \App\Models\Movie::all();
+});
 
 Route::get('/run-migrations-x7k2q', function () {
     Artisan::call('migrate', ['--force' => true]);
