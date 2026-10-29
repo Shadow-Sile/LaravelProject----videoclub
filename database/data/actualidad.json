@@ -1,0 +1,42 @@
+[
+  {
+    "source": "NBA.com",
+    "category": "NBA",
+    "title": "Starting 5: Clutch performances galore across the league",
+    "url": "https://www.nba.com/news/starting-5-october-29-2026",
+    "date": "2026-10-29",
+    "summary": "Steph Curry explodes for 44 pts against the Wolves; Nikola Jokić makes history with his 200th triple-double; Rockets stay perfect; and WNBA Finals Game 6 heads to Atlanta."
+  },
+  {
+    "source": "ESPN",
+    "category": "NBA",
+    "title": "NBA buzz: Latest on trades, news, roster moves and intel",
+    "url": "https://www.espn.com.sg/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+    "date": "2026-10-29",
+    "summary": "AJ Dybantsa (No. 1 pick) debuts for the Wizards; Anthony Davis explosive; Tyrese Haliburton injured; Jaylen Brown, LeBron James and the 76ers start strong."
+  },
+  {
+    "source": "EuroLeague",
+    "category": "EU",
+    "title": "EuroLeague Basketball unveils 10-year business plan",
+    "url": "https://mediacentre.euroleague.net/mediacentre/en/press_releases",
+    "date": "2026-10-16",
+    "summary": "€3.4 billion projected for teams over 10 years; €648M in annual commercial revenues by Year 10; SuperCup MVP Walter Tavares (Real Madrid)."
+  },
+  {
+    "source": "EuroLeague",
+    "category": "EU",
+    "title": "Latest News | EuroLeague",
+    "url": "https://www.euroleaguebasketball.net/euroleague/news/",
+    "date": "2026-10-29",
+    "summary": "Round 32 updates: Jantunen a game-time decision; Real Madrid leading; Milan controlling the series."
+  },
+  {
+    "source": "B.League",
+    "category": "B.League",
+    "title": "B.League official news",
+    "url": "https://www.bleague.jp/news/en/",
+    "date": "2026-10-29",
+    "summary": "Weekly roundup of B.League (Japan): results from Alvark Tokyo, Chiba Jets, Chiba Jets Funabashi, Utsunomiya Brex, Sunrockers Shibuya, Levanga Hokkaido and the new teams."
+  }
+]

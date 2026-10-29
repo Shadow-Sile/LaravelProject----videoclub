@@ -23,6 +23,9 @@ Route::get('/run-migrations-x7k2q', function () {
 });
 Route::get('/', [CatalogController::class,'index'])->name('catalog.index');
 
+Route::get('/actualidad', [App\Http\Controllers\ActualidadController::class, 'index'])->name('actualidad.index');
+
+
 Route::get('/catalog', [CatalogController::class,'index'])->name('catalog.index');
 
 Route::get('/login', function () {
